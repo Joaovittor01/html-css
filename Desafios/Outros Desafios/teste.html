@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Elementos com Tooltip</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 5px;
+            background: #f0f0f0;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .circle {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Passe o mouse sobre os termos para ver as tags HTML</h2>
+    <ul>
+        <li title="<p>">Parágrafo</li>
+        <li title="<h1>">Título Principal</li>
+        <li title="<a>">Link</li>
+        <li title="<img>">Imagem</li>
+        <li title="<ul>">Lista Não Ordenada</li>
+        <li title="<ol>">Lista Ordenada</li>
+        <li title="<li>">Item de Lista</li>
+        <li title="<table>">Tabela</li>
+        <li title="<tr>">Linha de Tabela</li>
+        <li title="<td>">Célula de Tabela</li>
+    </ul>
+    <div class="circle"></div>
+</body>
+</html>
