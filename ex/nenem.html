@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Feliz Dia das Mulheres ❤️</title>
+
+<style>
+
+body{
+margin:0;
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#ff4e88,#ff9ecf);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+header{
+padding:80px 20px;
+}
+
+h1{
+font-size:50px;
+}
+
+h2{
+margin-top:40px;
+}
+
+section{
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.carta{
+background:rgba(255,255,255,0.15);
+padding:30px;
+border-radius:15px;
+line-height:1.8;
+font-size:20px;
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+margin-top:30px;
+}
+
+.galeria img{
+width:100%;
+border-radius:10px;
+}
+
+.botao{
+background:white;
+color:#ff4e88;
+padding:15px 30px;
+border:none;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+margin-top:30px;
+}
+
+footer{
+padding:40px;
+font-size:18px;
+}
+
+.heart{
+position:fixed;
+top:-10px;
+color:white;
+animation:fall linear forwards;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌹 Feliz Dia das Mulheres 🌹</h1>
+<h2>Para a mulher mais incrível da minha vida</h2>
+<p>Minha esposa, minha companheira, meu amor ❤️</p>
+
+<button class="botao" onclick="mostrarMensagem()">Clique para uma surpresa</button>
+</header>
+
+<section id="mensagem" style="display:none">
+
+<h2>💌 Uma mensagem para você</h2>
+
+<div class="carta">
+
+<p>Meu amor,</p>
+
+<p>
+Hoje é o Dia das Mulheres, mas para mim todos os dias deveriam ser dedicados a você.
+Porque você é muito mais do que uma esposa.
+</p>
+
+<p>
+Você é minha melhor amiga, minha parceira de vida,
+a pessoa que ilumina meus dias e dá sentido a tudo que faço.
+</p>
+
+<p>
+Sua força, seu carinho, sua inteligência e seu amor
+transformam o mundo ao seu redor.
+E eu tenho a sorte de viver esse amor todos os dias.
+</p>
+
+<p>
+Obrigado por caminhar comigo,
+por me apoiar,
+por compartilhar sonhos
+e por construir nossa história juntos.
+</p>
+
+<p>
+Hoje quero apenas lembrar o quanto você é especial.
+</p>
+
+<p>
+Eu te amo mais do que palavras conseguem explicar.
+</p>
+
+<p>
+❤️ Feliz Dia das Mulheres ❤️
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>📸 Nossos Momentos</h2>
+
+<div class="galeria">
+
+<img src="imagens nenem/FotoBe.jpeg">
+<img src="imagens nenem/FotoBe2.jpeg">
+<img src="imagens nenem/FotoBe3.jpeg">
+<img src="imagens nenem/FotoBe4.jpeg">
+
+</div>
+
+</section>
+
+<section>
+
+<h2>💖 Por que eu te amo</h2>
+
+<p>Porque você me faz sorrir.</p>
+<p>Porque você me apoia em todos os momentos.</p>
+<p>Porque você transforma minha vida em algo muito mais bonito.</p>
+<p>Porque ao seu lado tudo faz sentido.</p>
+
+</section>
+
+<footer>
+
+<p>Com todo meu amor ❤️</p>
+<p>Seu marido apaixonado louco, maluco por você meu amo!!!!!</p>
+<p>❤️❤️❤️❤️❤️❤️❤️❤️</p>
+
+</footer>
+
+<script>
+
+function mostrarMensagem(){
+document.getElementById("mensagem").style.display="block"
+}
+
+setInterval(function(){
+
+const heart = document.createElement("div")
+
+heart.classList.add("heart")
+
+heart.innerHTML="❤️"
+
+heart.style.left=Math.random()*100+"vw"
+
+heart.style.animationDuration=2+Math.random()*3+"s"
+
+document.body.appendChild(heart)
+
+setTimeout(()=>{
+heart.remove()
+},5000)
+
+},300)
+
+</script>
+
+</body>
+</html>

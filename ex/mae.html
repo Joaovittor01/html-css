@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<title>Feliz Dia das Mulheres - Mãe</title>
+
+<style>
+
+body{
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(135deg,#f5659c,#f79fbf);
+color:#fff;
+text-align:center;
+overflow-x:hidden;
+}
+
+header{
+padding:80px 20px;
+}
+
+h1{
+font-size:48px;
+}
+
+h2{
+margin-top:40px;
+}
+
+section{
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.carta{
+background:rgba(255,255,255,0.2);
+padding:35px;
+border-radius:20px;
+font-size:20px;
+line-height:1.8;
+}
+
+.botao{
+background:white;
+color:#f73673;
+padding:15px 30px;
+border:none;
+border-radius:40px;
+font-size:18px;
+cursor:pointer;
+margin-top:30px;
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+margin-top:30px;
+}
+
+.galeria img{
+width:100%;
+border-radius:15px;
+}
+
+footer{
+padding:40px;
+font-size:18px;
+}
+
+.heart{
+position:fixed
+
+;
+top:-10px;
+color:white;
+animation:fall linear forwards;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>💐 Feliz Dia das Mulheres 💐</h1>
+
+<h2>Para a mulher mais importante da minha vida</h2>
+
+<p>Minha mãe ❤️</p>
+
+<button class="botao" onclick="mostrarMensagem()">
+Clique para ler minha mensagem
+</button>
+
+</header>
+
+
+<section id="mensagem" style="display:none">
+
+<h2>💌 Uma carta para minha mãe</h2>
+
+<div class="carta">
+
+<p>Mãe,</p>
+
+<p>
+Hoje é o Dia das Mulheres, e eu não poderia deixar de dizer o quanto você é
+uma mulher incrível e especial.
+</p>
+
+<p>
+Você é exemplo de força, coragem e amor.
+Uma mulher que enfrentou desafios, superou dificuldades
+e sempre colocou sua família em primeiro lugar.
+</p>
+
+<p>
+Você é a pessoa que me ensinou valores,
+que me guiou nos momentos difíceis
+e que sempre esteve ao meu lado com carinho.
+</p>
+
+<p>
+Tudo que sou hoje tem muito de você.
+Cada conselho, cada cuidado,
+cada gesto de amor fez diferença na minha vida.
+</p>
+
+<p>
+Neste dia especial quero agradecer por tudo.
+Por sua dedicação, sua paciência
+e pelo amor que nunca faltou.
+</p>
+
+<p>
+Você não é apenas uma grande mulher,
+você é a melhor mãe que alguém poderia ter.
+</p>
+
+<p>
+    Me desulpe por não dizer isso com mais frequência, mas eu te amo muito e sou eternamente grato por tudo que você fez por mim.
+</p>
+<p>
+Eu te amo muito ❤️
+</p>
+
+<p>
+💐 Feliz Dia das Mulheres, mãe! 💐
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>📸 </h2>
+
+<div class="galeria">
+
+
+<img src="iamgens mae/Mae2.jpeg">
+<img src="iamgens mae/Mãe3.jpeg">
+<img src="iamgens mae/Mãe.jpg">
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>🌷 Qualidades da minha mãe</h2>
+
+<p>❤️ Amor incondicional</p>
+<p>💪 Força para enfrentar qualquer desafio</p>
+<p>🌟 Sabedoria para orientar</p>
+<p>🤗 Carinho que acolhe</p>
+<p>🙏 Inspiração para minha vida</p>
+
+
+</section>
+
+
+<footer>
+
+<p>Com todo meu amor ❤️</p>
+<p>Eu te amo eternamente Mãe! ❤️</p>
+
+</footer>
+
+
+<script>
+
+function mostrarMensagem(){
+document.getElementById("mensagem").style.display="block"
+}
+
+setInterval(function(){
+
+const heart = document.createElement("div")
+
+heart.classList.add("heart")
+
+heart.innerHTML="💖"
+
+heart.style.left=Math.random()*100+"vw"
+
+heart.style.animationDuration=2+Math.random()*3+"s"
+
+document.body.appendChild(heart)
+
+setTimeout(()=>{
+heart.remove()
+},5000)
+
+},300)
+
+</script>
+
+</body>
+</html>

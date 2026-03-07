@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<title>Feliz Dia das Mulheres - Irmã</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#f16084,#f590be);
+color:rgb(247, 245, 245);
+text-align:center;
+overflow-x:hidden;
+}
+
+header{
+padding:80px 20px;
+}
+
+h1{
+font-size:48px;
+}
+
+section{
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.carta{
+background:rgba(255,255,255,0.2);
+padding:35px;
+border-radius:20px;
+font-size:20px;
+line-height:1.8;
+}
+
+.botao{
+background:white;
+color:#ff4f87;
+padding:15px 30px;
+border:none;
+border-radius:40px;
+font-size:18px;
+cursor:pointer;
+margin-top:30px;
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+margin-top:30px;
+}
+
+.galeria img{
+width:100%;
+border-radius:12px;
+}
+
+footer{
+padding:40px;
+font-size:18px;
+}
+
+.heart{
+position:fixed;
+top:-10px;
+color:white;
+animation:fall linear forwards;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>🌸 Feliz Dia das Mulheres 🌸</h1>
+
+<h2>Para minha irmã cabeçuda kkk</h2>
+
+<p>Uma mulher incrível que admiro muito 💖</p>
+
+<button class="botao" onclick="mostrarMensagem()">
+Clique para ver minha mensagem
+</button>
+
+</header>
+
+<section id="mensagem" style="display:none">
+
+<h2>💌 Uma mensagem para minha irmã</h2>
+
+<div class="carta">
+
+<p>Minha irmã,</p>
+
+<p>
+Hoje é um dia especial para lembrar o quanto você é uma mulher incrível.
+O Dia das Mulheres celebra a força, a coragem e a importância de mulheres
+como você no mundo.
+</p>
+
+<p>
+Desde sempre você faz parte da minha história.
+Compartilhamos momentos, risadas, desafios e lembranças
+que sempre vou guardar com carinho.
+</p>
+
+<p>
+Você é uma pessoa forte, inteligente e cheia de sonhos.
+Tenho muito orgulho da mulher que você é
+e de tudo que você ainda vai conquistar.
+</p>
+
+<p>
+Que sua vida seja sempre cheia de felicidade,
+sucesso e momentos inesquecíveis.
+</p>
+
+<p>
+Obrigado por ser uma irmã tão especial para mim.
+</p>
+
+<p>
+💖 Feliz Dia das Mulheres! 💖
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>📸 Nossos Momentos</h2>
+
+<p>Coloque aqui algumas fotos com sua irmã.</p>
+
+<div class="galeria">
+
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+
+</div>
+
+</section>
+
+<section>
+
+<h2>✨ Qualidades da minha irmã</h2>
+
+<p>🌟 Inteligente</p>
+<p>💪 Forte</p>
+<p>😊 Alegre</p>
+<p>💖 Carinhosa</p>
+<p>🚀 Cheia de sonhos</p>
+
+</section>
+
+<footer>
+
+<p>Com carinho ❤️</p>
+<p>Seu irmão que te admira muito</p>
+
+</footer>
+
+<script>
+
+function mostrarMensagem(){
+document.getElementById("mensagem").style.display="block"
+}
+
+setInterval(function(){
+
+const heart=document.createElement("div")
+
+heart.classList.add("heart")
+
+heart.innerHTML="💗"
+
+heart.style.left=Math.random()*100+"vw"
+
+heart.style.animationDuration=2+Math.random()*3+"s"
+
+document.body.appendChild(heart)
+
+setTimeout(()=>{
+heart.remove()
+},5000)
+
+},300)
+
+</script>
+
+</body>
+</html>
